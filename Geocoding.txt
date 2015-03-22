@@ -1,0 +1,10 @@
+#Geocoding
+
+install.packages("ggmap")
+library("ggmap")
+
+addresses<-read.csv("...", header=TRUE)
+
+points<-geocode(as.character(addresses$location)
+write.csv(points, ".....csv")
+
